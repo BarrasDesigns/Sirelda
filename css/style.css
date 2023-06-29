@@ -10,8 +10,7 @@
 }
 
 .logo__img {
-  max-width: 50%;
-  margin-bottom: 20px;
+  max-width: 90%;
 }
 
 .titulo {
@@ -67,14 +66,14 @@
 }
 
 .objectfit > img {
-  width: 11rem;
-  height: 11rem;
+  width: 150px;
+  height: 200px;
   object-fit: cover;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: black;
-  border: 3px solid #b20000;
+  border: 3px solid #0068b2;
 }
 
 .nombre_puesto {
@@ -90,11 +89,18 @@
   margin-top: -23%;
 }
 
+@media (max-width: 428px) {
+  .objectfit {
+    justify-content: center;
+  }
+}
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -102,11 +108,32 @@ html {
   margin-left: 2.5%;
   width: 95%;
   border-radius: 5%;
-  background-color: var(--fondo2);
+  background-color: #2b70ac;
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   background-color: #f6f6f6;
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 468px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

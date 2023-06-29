@@ -1,18 +1,45 @@
 @use 'colorsFonts';
 @use 'primerModulo';
+@use 'form';
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  #wrapper {
-    margin-left: 2.5%;
-    width: 95%;
-    border-radius: 5%;
-    background-color: var(--fondo2);
+  box-sizing: border-box;
 }
-body{
-    background-color: colorsFonts.$main;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#wrapper {
+  margin-left: 2.5%;
+  width: 95%;
+  border-radius: 5%;
+  background-color: colorsFonts.$wrapper;
+}
+
+body {
+  font-family: colorsFonts.$mainFont;
+  background-color: colorsFonts.$main;
+  color: colorsFonts.$letra;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+section{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+@media (max-width: 468px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2{
+    font-size: 15px;
+  }
+
 }
