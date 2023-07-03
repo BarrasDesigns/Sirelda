@@ -32,6 +32,11 @@ h2 {
 section{
   margin-top:20px;
   margin-bottom:20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
 }
 
 @media (max-width: 468px) {
