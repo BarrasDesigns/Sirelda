@@ -1,6 +1,7 @@
 @use 'colorsFonts';
 @use 'primerModulo';
 @use 'form';
+@use 'video';
 
 html {
   box-sizing: border-box;
@@ -37,6 +38,10 @@ section{
   justify-content: center;
   flex-direction: column;
  
+}
+.ubicacion{
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 468px) {
