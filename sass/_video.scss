@@ -1,11 +1,12 @@
 .video{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    // display: flex;
+    // justify-content: center;
+    margin: 0 auto;
 }
 @media (max-width: 468px) {
     .video{
-        width: 90%;
+        width: 50%;
     }
     
 }

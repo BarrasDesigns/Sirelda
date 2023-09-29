@@ -135,6 +135,79 @@
         </button>
       </div>
     </section>
+<section class="video">
+  <video src="/video/video.mp4"  autoplay muted loop controls></video>
+</section>
+
+
+    <section>
+
+      <h1>Especialidades</h1>
+      <div class="especialidades">
+        <ul>
+          <li>
+            <button class="boton" onclick="toggleModal1()"><img src="./img/especialidad1.jpeg"
+                alt="especialidad1"></button>
+
+            <div tabIndex="0"></div>
+            <div id="modalContainer--medicinaInterna" style="display: none;">
+              <div class="overlay"></div>
+              <div role="dialog" aria-labelledby="modaltitulo" aria-modal="true" class="modal1">
+                <h2 class="modal__titulo">Medicina Interna</h2>
+                <p class="modal__parrafo">¿Qué es medicina interna?
+
+                  La medicina interna ofrece un servicio destinado a la prevención, diagnóstico, tratamiento oportuno y
+                  seguimiento de patologías tanto infecciosas como respiratorias, endocrinológica, dermatológicas,
+                  reumáticas, nefrológicas, gastrointestinales y hematológicas, por mencionar algunas.</p>
+                  <img class="modal__img" src="./img/medicinaInterna.jpg" alt="medicinaInterna">
+
+                <button class="boton--modal" onclick="toggleModal1()">Cerrar</button>
+                <div tabIndex="0"></div>
+
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <button class="boton" onclick="toggleModal2()"><img src="./img/especialidad2.jpeg"
+                alt="especialidad2"></button>
+
+            <div tabIndex="0"></div>
+            <div id="modalContainer--geriatria" style="display: none;">
+              <div class="overlay"></div>
+              <div role="dialog" aria-labelledby="modaltitulo" aria-modal="true" class="modal1">
+                <h2 class="modal__titulo">Geriatría</h2>
+                <p class="modal__parrafo">La geriatría es la rama de la medicina que se preocupa de los problemas y enfermedades de los adultos mayores, cómo prevenirlas y manejarlas, y del proceso de envejecer. No sólo del aspecto médico, sino también de aspectos sicológicos y sociales que habitualmente acompañan este proceso.</p>
+                <img class="modal__img" src="./img/geriatria.jpg" alt="geriatria">
+
+                <button class="boton--modal" onclick="toggleModal2()">Cerrar</button>
+                <div tabIndex="0"></div>
+
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <button class="boton" onclick="toggleModal3()"><img src="./img/especialidad3.png"
+                alt="especialidad3"></button>
+
+            <div tabIndex="0"></div>
+            <div id="modalContainer--ansiedad" style="display: none;">
+              <div class="overlay"></div>
+              <div role="dialog" aria-labelledby="modaltitulo" aria-modal="true" class="modal1">
+                <h2 class="modal__titulo">Ansiedad</h2>
+
+                <button class="boton--modal" onclick="toggleModal3()">Cerrar</button>
+                <div tabIndex="0"></div>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
 
     <h3>Contacto</h3>
     <section>

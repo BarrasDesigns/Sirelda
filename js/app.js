@@ -1,3 +1,34 @@
+const toggleModal1 = ((e) => {
+    const modal = document.getElementById("modalContainer--medicinaInterna");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+  const toggleModal2 = ((e) => {
+    const modal = document.getElementById("modalContainer--geriatria");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+  const toggleModal3 = ((e) => {
+    const modal = document.getElementById("modalContainer--ansiedad");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+
 function isMobile() {
     if (sessionStorage.desktop)
         return false;
