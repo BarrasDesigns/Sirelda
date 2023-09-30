@@ -137,8 +137,35 @@ textarea:hover {
   justify-content: space-evenly;
 }
 
+.especialidades > ul {
+  width: 80%;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: "E1 E2 E3 E4";
+}
+
+.E1 {
+  grid-area: E1;
+}
+
+.E1 {
+  grid-area: E1;
+}
+
+.E2 {
+  grid-area: E2;
+}
+
+.E3 {
+  grid-area: E3;
+}
+
+.E4 {
+  grid-area: E4;
+}
+
 .especialidades > ul > li > button > img {
-  width: 70px;
+  width: 50px;
   border-radius: 50px;
   background-color: white;
   padding: 10px;
@@ -159,7 +186,7 @@ textarea:hover {
 .modal1 {
   position: absolute;
   z-index: 10;
-  top: 1133px;
+  top: 866px;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 79vh;
@@ -190,7 +217,27 @@ textarea:hover {
   border-color: transparent;
   color: white;
   transition: 0.2;
-  font-size: 18px;
+  padding: 6px;
+}
+
+.boton--medicina {
+  background: white;
+  border-radius: 50%;
+}
+
+.boton--geriatria {
+  background: green;
+  border-radius: 50%;
+}
+
+.boton--diabetes {
+  background: blue;
+  border-radius: 50%;
+}
+
+.boton--longevidad {
+  background: purple;
+  border-radius: 50%;
 }
 
 .boton:hover {
@@ -213,9 +260,16 @@ textarea:hover {
 }
 
 /* MEDIA QUERIES  */
-@media (min-width: 960px) {
-  .modal1 {
-    top: 2900px;
+@media (max-width: 460px) {
+  .especialidades > ul > li > button > img {
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px;
+  }
+  .especialidades > ul {
+    display: grid;
+    grid-template-areas: "E1 E2" "E3 E4";
   }
 }
 html {

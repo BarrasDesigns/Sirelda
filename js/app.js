@@ -19,7 +19,17 @@ const toggleModal1 = ((e) => {
     }
   })
   const toggleModal3 = ((e) => {
-    const modal = document.getElementById("modalContainer--ansiedad");
+    const modal = document.getElementById("modalContainer--diabetes");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+  const toggleModal4 = ((e) => {
+    const modal = document.getElementById("modalContainer--longevidad");
     if (modal.style.display === "none") {
       modal.style.display = "block";
       trapped = trapFocus(modal);
