@@ -32,14 +32,15 @@
 
 @media only screen and (min-width: 320px) and (max-width: 566px) {
     .textosEnlaces {
-font-size: 14px;
+        font-size: 14px;
         width: 9%;
     }
 
 }
+
 @media only screen and (min-width: 960px) {
     .textosEnlaces {
-font-size: 18px;
+        font-size: 18px;
         width: 5%;
     }
 
@@ -60,7 +61,7 @@ font-size: 18px;
 .modal1 {
     position: absolute;
     z-index: 10;
-    top: 866px;
+    top: 200px;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 79vh;
