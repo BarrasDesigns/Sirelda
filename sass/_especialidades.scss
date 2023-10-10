@@ -10,38 +10,39 @@
     justify-content: space-evenly;
 }
 
-.especialidades>ul {
-    width: 80%;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-areas: "E1 E2 E3 E4";
-}
-
-.E1 {
-    grid-area: E1;
-}
-
-.E1 {
-    grid-area: E1;
-}
-
-.E2 {
-    grid-area: E2;
-}
-
-.E3 {
-    grid-area: E3;
-}
-
-.E4 {
-    grid-area: E4;
-}
-
 .especialidades>ul>li>button>img {
     width: 50px;
     border-radius: 50px;
     background-color: white;
     padding: 10px;
+}
+
+.textosEnlaces {
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    text-wrap: wrap;
+    width: 19%;
+
+}
+
+.especialidades {
+    position: relative;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 566px) {
+    .textosEnlaces {
+font-size: 14px;
+        width: 9%;
+    }
+
+}
+@media only screen and (min-width: 960px) {
+    .textosEnlaces {
+font-size: 18px;
+        width: 5%;
+    }
+
 }
 
 /* MODAL */
@@ -96,7 +97,7 @@
 }
 
 .boton--medicina {
-    background: white;
+    background: yellow;
     border-radius: 50%;
 }
 
@@ -146,9 +147,4 @@
         padding: 10px;
     }
 
-    .especialidades>ul {
-        display: grid;
-        grid-template-areas: "E1 E2"
-            "E3 E4";
-    }
 }
