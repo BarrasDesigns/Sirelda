@@ -61,10 +61,10 @@
 .modal1 {
     position: absolute;
     z-index: 10;
-    top: 200px;
+    top:-15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 79vh;
+    height: 400px;
     width: 90vw;
     background-color: #000000;
     border-radius: 4px;
@@ -146,6 +146,11 @@
         border-radius: 50px;
         background-color: white;
         padding: 10px;
+    }
+    .modal1{
+        height: 600px;
+        margin: 0 auto;
+
     }
 
 }

@@ -85,20 +85,19 @@
         <div class="especialidades">
           <ul>
             <li class="E1">
-              
+
               <button class="boton boton--medicina" onclick="toggleModal1()"><img src="./img/especialidad1.jpeg"
                   alt="especialidad1"></button>
-                  <p class="textosEnlaces">Medicina Interna</p>
+              <p class="textosEnlaces">Medicina Interna</p>
               <div id="modalContainer--medicinaInterna" style="display: none;">
                 <div class="overlay"></div>
                 <div role="dialog" aria-labelledby="modaltitulo" aria-modal="true" class="modal1">
                   <h2 class="modal__titulo">Medicina Interna</h2>
-                  <p class="modal__parrafo">¿Qué es medicina interna?
-
-                    La medicina interna ofrece un servicio destinado a la prevención, diagnóstico, tratamiento oportuno
-                    y
-                    seguimiento de patologías tanto infecciosas como respiratorias, endocrinológica, dermatológicas,
-                    reumáticas, nefrológicas, gastrointestinales y hematológicas, por mencionar algunas.</p>
+                  <p class="modal__parrafo">La medicina interna se encarga de la prevención, diagnóstico, tratamiento
+                    oportuno y seguimiento a personas adultas mayores de 18 años dentro de un amplio espectro de
+                    enfermedades, principalmente
+                    patologías metabólicas como diabetes, hipertensión y dislipidemia, patologías infecciosas como
+                    respiratorias, endocrinológicas y gastrointestinales, por mencionar algunas.</p>
                   <img class="modal__img" src="./img/medicinaInterna.jpg" alt="medicinaInterna">
 
                   <button class="boton--modal" onclick="toggleModal1()">Cerrar</button>
@@ -139,7 +138,17 @@
                 <div class="overlay"></div>
                 <div role="dialog" aria-labelledby="modaltitulo" aria-modal="true" class="modal1">
                   <h2 class="modal__titulo">Especialista en Diabetes (Endocrinogeriatría)</h2>
-                  <p class="modal__parrafo">La Endocrinología es la especialidad médica que estudia el funcionamiento de las glándulas, como el páncreas o la tiroides, además de estudiar las hormonas que éstas producen. Un Endocrinólogo Geriatra determina si existe una enfermedad relacionada con estas glándulas y cuál es el tratamiento más adecuado.</p>
+                  <p class="modal__parrafo">El especialista en Diabetes o diabetólogo lleva a cabo estrategias que van
+                    desde la prevención (como cambios en el estilo de vida), diagnóstico, tratamiento, así como la
+                    prevención y el manejo de las complicaciones.
+                  </p>
+                  <p>
+                    La Endocrinología es la especialidad médica que estudia el funcionamiento de las glándulas, como el
+                    páncreas o la tiroides, además de estudiar las hormonas que éstas producen.
+                  </p>
+                  <p>
+                    Un Endocrinólogo Geriatra determina si existe una enfermedad relacionada con estas glándulas y cuál
+                    es el tratamiento más adecuado.</p>
                   <img class="modal__img" src="./img/diabeticModal.jpg" alt="diabeticModal">
 
                   <button class="boton--modal" onclick="toggleModal3()">Cerrar</button>
@@ -158,12 +167,37 @@
                 <div class="overlay"></div>
                 <div role="dialog" aria-labelledby="modaltitulo" aria-modal="true" class="modal1">
                   <h2 class="modal__titulo">Longevidad Saludable (Prevención)</h2>
-                  <p class="modal__parrafo">La vejez es un proceso natural del ser humano que no puede evitarse. No obstante, hay diversos factores que ayudan a sobrellevar de buena manera esta etapa de la vida como por ejemplo ser sociable, relajado, optimista y risueño, entre otras.
+                  <p class="modal__parrafo">La vejez es un proceso natural del ser humano que no puede evitarse. No
+                    obstante, hay diversos factores que ayudan a sobrellevar de buena manera esta etapa de la vida como
+                    por ejemplo:
+                    <br>
+                    <br>
 
- 
+                  <ul>
+                    <li>Detección oportuna y control de enfermedades.</li>
+                    <li>Dieta saludable y ejercicios adecuado.</li>
+                    <li>Evitar adicciones como tabaco y alcohol.</li>
+                    <li>Bienestar social, mental y emocional incluyendo ser
+                      relajado y optimista, entre otras.</li>
 
-                    La longevidad saludable consiste en llegar a una edad avanzada en buenas condiciones de salud física y mental, es decir, sin enfermedades invalidantes, dolorosas o demenciantes. En el ser humano la expectativa de vida se estima en 120 años, pero todo depende de los genes individuales y de factores como el medio ambiente en el cual se desenvuelve, sus hábitos de vida y las enfermedades que contrae a lo largo de esta.</p>
-                    <img class="modal__img" src="./img/longevidadModal.jpg" alt="longevidadModal">
+                  </ul>
+                  </p>
+                  <p>
+
+                    La longevidad saludable consiste en llegar a una edad avanzada en buenas condiciones de salud física
+                    y mental, es decir, sin enfermedades invalidantes, dolorosas o demenciantes o con buen control de
+                    las enfermedades.
+
+                  </p>
+                  <p>
+
+                    En el ser humano la esperanza de vida en Mexico según la OMS se estima en 76años, pero todo depende
+                    de los genes individuales y de factores como el medio ambiente en el cual se desenvuelve, sus
+                    hábitos de vida y las enfermedades que contrae a lo largo de esta.
+                  </p>
+                  <p>
+                    Contáctanos y déjanos ayudarte a mantener una longevidad saludable.</p>
+                  <img class="modal__img" src="./img/longevidadModal.jpg" alt="longevidadModal">
 
                   <button class="boton--modal" onclick="toggleModal4()">Cerrar</button>
                   <div tabIndex="0"></div>
@@ -230,9 +264,53 @@
         </button>
       </div>
     </section>
+
+
+
+    <h3 style="text-align: center;">Encuentrános</h3>
+    <div class="contVideo">
+      <video id="intro" width="640" height="320" controls autoplay="true" muted loop controls>
+        <source src="/video/video.mp4" type="video/mp4">
+        Tu explorador no soporta este formato de video.
+      </video>
+
+    </div>
     <section class="video">
-      <video src="/video/video.mp4" autoplay muted loop controls></video>
+      <div class="ubicacion">
+
+        <a id="fullscreen" href="#">
+
+          <button class="boton--intro" type="button" id="btnIntro">
+            <p>ONCARE Chroma</p>
+            <p>Revisa como llegar dando click aquí</p>
+            <i><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 4v13" /><path d="M15 7v13" /></svg></i>
+          </button>
+        </a>
+      </div>
+      <div class="ubicacion">
+
+
+        <a href="https://maps.app.goo.gl/PT4qCHURNTM8FMyP7">
+          <button class="boton--intro" type="button" id="btnIntro">
+            <p>Instituto de Salud Digestiva del Hospital San José</p>
+            <p>Abre la ubicación de Google Maps dando click aquí</p>
+
+            <i><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg></i>
+
+
+          </button>
+        </a>
+      </div>
     </section>
+    <!-- <section class="video">
+      <video src="/video/video.mp4" autoplay muted loop controls></video>
+    </section> -->
 
 
     <h3>Contacto</h3>
