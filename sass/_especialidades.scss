@@ -1,13 +1,14 @@
 .especialidades {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(1, );
 }
 
 .especialidades>ul {
     width: 100%;
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .especialidades>ul>li>button>img {
@@ -18,11 +19,10 @@
 }
 
 .textosEnlaces {
-    position: absolute;
     font-size: 12px;
     text-align: center;
-    text-wrap: wrap;
-    width: 19%;
+    width: 50%;
+
 
 }
 
@@ -30,10 +30,18 @@
     position: relative;
 }
 
+@media only screen and (max-width: 319px) {
+    .textosEnlaces {
+        margin-left: 20%;
+    }
+
+}
+
 @media only screen and (min-width: 320px) and (max-width: 566px) {
     .textosEnlaces {
+        margin-left: -20%;
         font-size: 14px;
-        width: 9%;
+        width: 100%;
     }
 
 }
@@ -41,7 +49,8 @@
 @media only screen and (min-width: 960px) {
     .textosEnlaces {
         font-size: 18px;
-        width: 5%;
+        width: 100%;
+        margin-left: -33%;
     }
 
 }
@@ -61,7 +70,7 @@
 .modal1 {
     position: absolute;
     z-index: 10;
-    top:-15%;
+    top: -15%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 400px;
@@ -122,14 +131,11 @@
 }
 
 .boton--modal {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    background-color: transparent;
+
     border-color: transparent;
     color: white;
     transition: 0.2;
-    font-size: 18px;
+
 }
 
 .boton--modal:hover {
@@ -140,6 +146,10 @@
 
 @media (max-width: 460px) {
 
+    .especialidades>ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
     .especialidades>ul>li>button>img {
         width: 50px;
@@ -147,7 +157,8 @@
         background-color: white;
         padding: 10px;
     }
-    .modal1{
+
+    .modal1 {
         height: 600px;
         margin: 0 auto;
 

@@ -40,7 +40,7 @@
         <div class="tel">
 
 
-          <div class="buttons">
+          <!-- <div class="buttons">
             <h1>Simple hover effects with <code>box-shadow</code></h1>
             <button class="fill">Fill In</button>
             <button class="pulse">Pulse</button>
@@ -49,16 +49,16 @@
             <button class="up">Fill Up</button>
             <button class="slide">Slide</button>
             <button class="offset">Offset</button>
-          </div>
+          </div> -->
 
 
           <div class="tel__contTelefonos">
 
-            <a href="tel:528139543212">
+            <a class="tel__item" href="tel:528139543212">
 
               <button class="offset">
-                <i><svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-phone-call" width="44"
-                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                <i><svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-phone-call" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path
@@ -66,7 +66,7 @@
                     <path d="M15 7a2 2 0 0 1 2 2" />
                     <path d="M15 3a6 6 0 0 1 6 6" />
                   </svg>
-                  <span>ONCARE <br> Recepción</span>
+                  <span class="tel__tag">ONCARE <br> Recepción</span>
                   <!-- <p><span class="tel__tag">
                       ONCARE <br> Recepción
                     </span></p> -->
@@ -75,30 +75,39 @@
               </button>
             </a>
 
+            <a class="tel__item" href="tel:528180406195">
+              <button class="offset">
 
+                <i><svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-phone-call" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
 
-
-            <a class="tel__item" href="tel:528180406195"><i><svg xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-phone-call" width="44" height="44" viewBox="0 0 24 24"
-                  stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                  <path d="M15 7a2 2 0 0 1 2 2" />
-                  <path d="M15 3a6 6 0 0 1 6 6" />
-                </svg></i>
-              <p><span class="tel__tag">Instituto de Salud Digestiva <br> Hospital San José</span></p>
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    <path d="M15 7a2 2 0 0 1 2 2" />
+                    <path d="M15 3a6 6 0 0 1 6 6" />
+                  </svg>
+                  <p><span class="tel__tag">Instituto de Salud Digestiva <br> Hospital San José</span></p>
+                </i>
+              </button>
             </a>
-            <a class="tel__item" href="tel:528118016515"><i><svg xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-phone-call" width="44" height="44" viewBox="0 0 24 24"
-                  stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <a class="tel__item" href="tel:528118016515">
+              <button class="offset">
+
+                <i><svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-phone-call" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path
                     d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
                   <path d="M15 7a2 2 0 0 1 2 2" />
                   <path d="M15 3a6 6 0 0 1 6 6" />
-                </svg></i>
-              <p><span class="tel__tag">Celular <br> Urgencias</span></p>
+                </svg>
+                <p><span class="tel__tag">Celular<br>Urgencias</span></p>
+              </i>
+              </button>
             </a>
           </div>
         </div>
@@ -157,7 +166,7 @@
                     respiratorias, endocrinológicas y gastrointestinales, por mencionar algunas.</p>
                   <img class="modal__img" src="./img/medicinaInterna.jpg" alt="medicinaInterna">
 
-                  <button class="boton--modal" onclick="toggleModal1()">Cerrar</button>
+                  <button class="boton boton--modal" onclick="toggleModal1()">Cerrar</button>
                   <div tabIndex="0"></div>
 
                 </div>
