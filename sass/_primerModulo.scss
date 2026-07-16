@@ -107,7 +107,7 @@
 /* CUSTOM FOTO */
 .objectfit {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .objectfit>img {
@@ -138,7 +138,10 @@
 // MEDIA QUERIES
 @media (min-width: 960px) {
     .objectfit {
-        justify-content: center;
+        justify-content: flex-start;
+    }
+    .nombre_puesto{
+        margin-top: -150px;
     }
 
     .tel__item {
